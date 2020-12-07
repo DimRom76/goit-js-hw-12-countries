@@ -1,0 +1,22 @@
+<h2 class="card-title text-center">{{name}}</h2>
+<div class="row no-gutters">
+<div class="col-md-4">
+    <div class="card-body">
+    <p class="card-text"><strong>Capital: </strong>{{capital}}</p>
+    <p class="card-text"><strong>Population: </strong>{{population}}</p>
+    <p class="card-text"><strong>Languages: </strong></p>
+    <ul>
+        {{#each languages}}
+            <li>{{this.name}}</li>
+        {{/each}}
+    </ul>
+    </div>
+</div>
+<div class="col-md-8">
+    <img
+    src="{{flag}}"
+    class="card-img"
+    alt="{{name}}"
+    />
+</div>
+</div>
