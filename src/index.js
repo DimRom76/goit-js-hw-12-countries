@@ -16,13 +16,11 @@ refs.inputCountry.addEventListener('input', debounce(onInputCountry, 500));
 refs.foundCountry.addEventListener('click', onClickListCountry);
 
 function updateCountry(country) {
-  refs.countryCard.innerHTML = '';
   refs.countryCard.innerHTML = countryTpl(country);
   refs.countryCard.classList.remove('is-hidden');
 }
 
 function updateFoundCountry(countries) {
-  refs.foundCountry.innerHTML = '';
   refs.foundCountry.innerHTML = foundCountriesTpl(countries);
   refs.foundCountry.classList.remove('is-hidden');
 }

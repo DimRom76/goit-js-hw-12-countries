@@ -24,6 +24,7 @@ body {
 
 .list-group-item:hover {
   background-color: rgb(42, 152, 226);
+  cursor: pointer;
 }
 
 .card-img {
