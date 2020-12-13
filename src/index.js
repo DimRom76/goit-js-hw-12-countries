@@ -51,7 +51,9 @@ function onInputCountry(e) {
     return;
   }
   refs.spinner.classList.remove('is-hidden');
-  fetchCountries(currentInput).then(updateView);
+  fetchCountries(currentInput)
+    .then(updateView)
+    .catch(err => console.log(err));
 }
 
 function onClickListCountry(e) {

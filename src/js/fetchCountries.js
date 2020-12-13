@@ -15,6 +15,7 @@ function fetchCountries(searchQuery) {
         'Something went wrong',
         'No data received or nothing found',
       );
+      return err;
     });
 }
 
